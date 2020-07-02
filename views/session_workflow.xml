@@ -1,0 +1,100 @@
+<openerp>
+    <data>
+        <!--se define el workflow y las actividades(estados) y transiciones entre ellos-->
+        <!--creo que el nombre del boton debe ser el id de la actividad para saber que hacer al presionar el boton
+        (que esta en el form de la session)-->
+        <record model="workflow" id="wkf_session">
+            <field name="name">OpenAcademy sessions workflow</field>
+            <field name="osv">test_module.session</field>
+            <field name="on_create">True</field>
+        </record>
+
+        <!--En este caso al presionar un boton se llama a la funcion del modelo (Ej: action_draft).
+        El 'id' de este record es el 'name' del boton en la vista de formulario de la session-->
+        <!--<record model="workflow.activity" id="draft">
+            <field name="name">Draft</field>
+            <field name="wkf_id" ref="wkf_session"/>
+            <field name="flow_start" eval="True"/>
+            <field name="kind">function</field>
+            <field name="action">action_draft()</field>
+        </record>-->
+
+        <!--Pero no se va a hacer como arriba, sino de esa forma-->
+        <!--Replace the Python methods for synchronizing session state by server actions.
+            Both the workflow and the server actions could have been created entirely from the UI.-->
+        <record model="ir.actions.server" id="set_session_to_draft">
+            <field name="name">Set session to Draft</field>
+            <field name="model_id" ref="model_test_module_session"/><!--'test_module_session' es el nombre de la tabla session-->
+            <field name="code">
+            model.search([('id', 'in', context['active_ids'])]).action_draft()
+            </field>
+        </record>
+        <record model="workflow.activity" id="draft">
+            <field name="name">Draft</field>
+            <field name="wkf_id" ref="wkf_session"/>
+            <field name="flow_start" eval="True"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_session_to_draft"/>
+        </record>
+
+         <record model="ir.actions.server" id="set_session_to_confirmed">
+            <field name="name">Set session to Confirmed</field>
+            <field name="model_id" ref="model_test_module_session"/>
+            <field name="code">
+            model.search([('id', 'in', context['active_ids'])]).action_confirm()
+            </field>
+        </record>
+        <record model="workflow.activity" id="confirmed">
+            <field name="name">Confirmed</field>
+            <field name="wkf_id" ref="wkf_session"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_session_to_confirmed"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_session_to_done">
+            <field name="name">Set session to Done</field>
+            <field name="model_id" ref="model_test_module_session"/>
+            <field name="code">
+            model.search([('id', 'in', context['active_ids'])]).action_done()
+            </field>
+        </record>
+        <record model="workflow.activity" id="done">
+            <field name="name">Done</field>
+            <field name="wkf_id" ref="wkf_session"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_session_to_done"/>
+        </record>
+
+        <!--Transiciones-->
+        <record model="workflow.transition" id="session_draft_to_confirmed">
+            <field name="act_from" ref="draft"/>
+            <field name="act_to" ref="confirmed"/>
+            <field name="signal">confirm</field>
+        </record>
+        <record model="workflow.transition" id="session_confirmed_to_draft">
+            <field name="act_from" ref="confirmed"/>
+            <field name="act_to" ref="draft"/>
+            <field name="signal">draft</field>
+        </record>
+        <record model="workflow.transition" id="session_done_to_draft">
+            <field name="act_from" ref="done"/>
+            <field name="act_to" ref="draft"/>
+            <field name="signal">draft</field>
+        </record>
+        <record model="workflow.transition" id="session_confirmed_to_done">
+            <field name="act_from" ref="confirmed"/>
+            <field name="act_to" ref="done"/>
+            <field name="signal">done</field>
+        </record>
+
+        <!--Transicion automatica cuando mas de la mitad de los asientos estan ocupados-->
+         <record model="workflow.transition" id="session_auto_confirm_half_filled">
+            <field name="act_from" ref="draft"/>
+            <field name="act_to" ref="confirmed"/>
+            <field name="condition">taken_seats &gt; 50</field>
+        </record>
+    </data>
+</openerp>

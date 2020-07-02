@@ -1,0 +1,25 @@
+<openerp>
+    <data>
+        <!--Se esta creando el grupo Manager para Test_Module
+        Y en ir.model.access.csv se le esta dando permiso a todos los usuarios de lectura para cursos y session
+        y para los usuarios en este grupo nuevo, se les da permiso de todo (solo faltaria decir que usuarios son de este grupo)-->
+        <record id="group_manager" model="res.groups">
+            <field name="name">Test_Module / Manager</field>
+        </record>
+
+        <!--Solo el responsable puede editar o borrar un curso, o todos si no hay responsable-->
+        <record id="write_delete_only_by_responsible" model="ir.rule">
+            <field name="name">Only the responsible can write or delete courses</field>
+            <field name="model_id" ref="model_test_module_course"/>
+            <field name="groups" eval="[(4, ref('test_module.group_manager'))]"/>
+            <field name="perm_read" eval="0"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="0"/>
+            <field name="perm_unlink" eval="1" />
+            <field name="domain_force">
+                ['|', ('responsible_id','=',False),
+                      ('responsible_id','=',user.id)]
+            </field>
+        </record>
+    </data>
+</openerp>

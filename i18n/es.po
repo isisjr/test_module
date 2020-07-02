@@ -1,0 +1,422 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* test_module
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20160701\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-29 15:54+0000\n"
+"PO-Revision-Date: 2020-06-29 15:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.view_openacad_session_kanban
+msgid "<br/>\n"
+"                                    Start date:"
+msgstr "<br/>\n"
+"                                    Start date:"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.view_openacad_session_kanban
+msgid "<br/>\n"
+"                                    duration:"
+msgstr "<br/>\n"
+"                                    duration:"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.course_form_view
+msgid "About"
+msgstr "About"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: test_module
+#: model:ir.actions.act_window,name:test_module.launch_session_wizard
+#: model:ir.ui.view,arch_db:test_module.wizard_form_view
+msgid "Add Attendees"
+msgstr "Add Attendees"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_res_partner_session_ids
+msgid "Attended Sessions"
+msgstr "Attended Sessions"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_attendee_ids
+#: model:ir.model.fields,field_description:test_module.field_test_module_wizard_attendee_ids
+msgid "Attendees"
+msgstr "Attendees"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_attendees_count
+msgid "Attendees count"
+msgstr "Attendees count"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.wizard_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_color
+msgid "Color"
+msgstr "Color"
+
+#. module: test_module
+#: model:ir.ui.menu,name:test_module.configuration_menu
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.session_form_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: test_module
+#: selection:test_module.session,state:0
+msgid "Confirmed"
+msgstr "Confirmed"
+
+#. module: test_module
+#: model:ir.actions.act_window,name:test_module.contact_cat_list_action
+#: model:ir.ui.menu,name:test_module.contact_cat_menu
+msgid "Contact Tags"
+msgstr "Contact Tags"
+
+#. module: test_module
+#: model:ir.actions.act_window,name:test_module.contact_list_action
+#: model:ir.ui.menu,name:test_module.contact_menu
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_course_id
+msgid "Course"
+msgstr "Curso"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.course_form_view
+msgid "Course Form"
+msgstr "Course Form"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.course_tree_view
+msgid "Course Tree"
+msgstr "Course Tree"
+
+#. module: test_module
+#: model:ir.actions.act_window,name:test_module.course_list_action
+#: model:ir.ui.menu,name:test_module.courses_menu
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: test_module
+#: model:ir.actions.act_window,help:test_module.course_list_action
+msgid "Create the first course"
+msgstr "Create the first course"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_create_uid
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_create_uid
+#: model:ir.model.fields,field_description:test_module.field_test_module_wizard_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_create_date
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_create_date
+#: model:ir.model.fields,field_description:test_module.field_test_module_wizard_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.view_openacad_session_kanban
+msgid "Delete"
+msgstr "Delete"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_description
+#: model:ir.ui.view,arch_db:test_module.course_form_view
+msgid "Description"
+msgstr "Descripción"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_display_name
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_display_name
+#: model:ir.model.fields,field_description:test_module.field_test_module_wizard_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: test_module
+#: selection:test_module.session,state:0
+msgid "Done"
+msgstr "Done"
+
+#. module: test_module
+#: selection:test_module.session,state:0
+msgid "Draft"
+msgstr "Draft"
+
+#. module: test_module
+#: model:ir.model.fields,help:test_module.field_test_module_session_duration
+msgid "Duration in days"
+msgstr "Duracion en dias"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_duration
+msgid "Duration"
+msgstr "Duration"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_hours
+msgid "Duration in hours"
+msgstr "Duration in hours"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_end_date
+msgid "End Date"
+msgstr "Fecha final"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.session_form_view
+msgid "General"
+msgstr "General"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.course_search_view
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_id
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_id
+#: model:ir.model.fields,field_description:test_module.field_test_module_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_res_partner_instructor
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_instructor_id
+msgid "Instructor"
+msgstr "Instructor"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course___last_update
+#: model:ir.model.fields,field_description:test_module.field_test_module_session___last_update
+#: model:ir.model.fields,field_description:test_module.field_test_module_wizard___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_write_uid
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_write_uid
+#: model:ir.model.fields,field_description:test_module.field_test_module_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_write_date
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_write_date
+#: model:ir.model.fields,field_description:test_module.field_test_module_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.session_form_view
+msgid "Mark as done"
+msgstr "Mark as done"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.course_search_view
+msgid "My Courses"
+msgstr "Mis Cursos"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_seats
+msgid "Number of seats"
+msgstr "Number of seats"
+
+#. module: test_module
+#: model:ir.ui.menu,name:test_module.openacademy_menu
+msgid "Open Academy"
+msgstr "Open Academy"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.openacademy_session_graph_view
+msgid "Participations by Courses"
+msgstr "Participations by Courses"
+
+#. module: test_module
+#: model:ir.model,name:test_module.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.course_form_view
+msgid "Registered sessions"
+msgstr "Registered sessions"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.session_form_view
+msgid "Reset to draft"
+msgstr "Reset to draft"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_responsible_id
+#: model:ir.ui.view,arch_db:test_module.course_search_view
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.session_form_view
+msgid "Schedule"
+msgstr "Schedule"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_wizard_session_id
+#: model:ir.ui.menu,name:test_module.session_menu
+msgid "Session"
+msgstr "Sesión"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.session_calendar_view
+msgid "Session Calendar"
+msgstr "Session Calendar"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.session_form_view
+msgid "Session Form"
+msgstr "Session Form"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.session_gantt_view
+msgid "Session Gantt"
+msgstr "Session Gantt"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.session_tree_view
+msgid "Session Tree"
+msgstr "Session Tree"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.view_openacad_session_kanban
+msgid "Session name:"
+msgstr "Session name:"
+
+#. module: test_module
+#: model:ir.actions.act_window,name:test_module.session_list_action
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_session_ids
+#: model:ir.ui.view,arch_db:test_module.course_form_view
+#: model:ir.ui.view,arch_db:test_module.partner_instructor_form_view
+msgid "Sessions"
+msgstr "Sesiones"
+
+#. module: test_module
+#: model:ir.actions.server,name:test_module.set_session_to_confirmed
+msgid "Set session to Confirmed"
+msgstr "Set session to Confirmed"
+
+#. module: test_module
+#: model:ir.actions.server,name:test_module.set_session_to_done
+msgid "Set session to Done"
+msgstr "Set session to Done"
+
+#. module: test_module
+#: model:ir.actions.server,name:test_module.set_session_to_draft
+msgid "Set session to Draft"
+msgstr "Set session to Draft"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_start_date
+msgid "Start date"
+msgstr "Start date"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_state
+msgid "State"
+msgstr "Provincia"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.wizard_form_view
+msgid "Subscribe"
+msgstr "Subscribe"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_session_taken_seats
+msgid "Taken seats"
+msgstr "Taken seats"
+
+#. module: test_module
+#: model:res.partner.category,name:test_module.teacher1
+msgid "Teacher / Level 1"
+msgstr "Teacher / Level 1"
+
+#. module: test_module
+#: model:res.partner.category,name:test_module.teacher2
+msgid "Teacher / Level 2"
+msgstr "Teacher / Level 2"
+
+#. module: test_module
+#: model:ir.ui.menu,name:test_module.main_openacademy_menu
+msgid "Test Module"
+msgstr "Test Module"
+
+#. module: test_module
+#: model:res.groups,name:test_module.group_manager
+msgid "Test_Module / Manager"
+msgstr "Test_Module / Manager"
+
+#. module: test_module
+#: sql_constraint:test_module.course:0
+msgid "The course title must be unique"
+msgstr "El titulo del curso debe ser unico"
+
+#. module: test_module
+#: sql_constraint:test_module.course:0
+msgid "The title of the course should not be the description"
+msgstr "El titulo no debe ser igual a la descripcion"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.course_form_view
+msgid "This is an example of notebooks"
+msgstr "This is an example of notebooks"
+
+#. module: test_module
+#: model:ir.model.fields,field_description:test_module.field_test_module_course_name
+msgid "Title"
+msgstr "Title"
+
+#. module: test_module
+#: model:ir.ui.view,arch_db:test_module.wizard_form_view
+msgid "or"
+msgstr "o"
+
+#. module: test_module
+#: model:ir.model,name:test_module.model_test_module_course
+msgid "test_module.course"
+msgstr "test_module.course"
+
+#. module: test_module
+#: model:ir.model,name:test_module.model_test_module_session
+msgid "test_module.session"
+msgstr "test_module.session"
+
+#. module: test_module
+#: model:ir.model,name:test_module.model_test_module_wizard
+msgid "test_module.wizard"
+msgstr "test_module.wizard"
+
