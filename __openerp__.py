@@ -6,7 +6,7 @@
         123 Practice Odoo Module Developing""",
 
     'description': """
-        Practice Odoo Module Developing ... Long ...
+        Practice Odoo Module Developing ... New description ...
     """,
 
     'author': "Isis Jimenez",
