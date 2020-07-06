@@ -1,12 +1,5 @@
 <openerp>
 <data>
-    <report
-        id="report_session"
-        model="test_model.session"
-        string="Session Report"
-        name="test_model.report_session_view"
-        file="test_model.report_session"
-        report_type="qweb-pdf" />
 
     <template id="report_session_view">
         <t t-call="report.html_container">
@@ -26,7 +19,15 @@
             </t>
         </t>
     </template>
-    
+
+    <report
+        id="report_session"
+        model="test_module.session"
+        string="Session Report"
+        name="test_module.report_session_view"
+        file="test_module.report_session_view"
+        report_type="qweb-pdf" />
+
 
 </data>
 </openerp>
